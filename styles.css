@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#instructions {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#color-options {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#color-options li {
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+#color-options li:hover {
+    background-color: #eaeaea;
+}
+
+#feedback {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#restart-btn {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #555;
+}
