@@ -72,7 +72,8 @@ function checkGuess(color) {
     } else {
         attemptsLeft--;
         if (attemptsLeft > 0) {
-            document.getElementById("feedback").textContent = `Wrong! You have ${attemptsLeft} attempts left.`;
+            const hint = color < targetColor ? "Higher":"Lower";
+            document.getElementById("feedback").textContent = `Wrong! The color is ${hint} in alphabetical order. You have ${attemptsLeft} attempts left.`;
         } else {
             document.getElementById("feedback").textContent = `Game Over! The color was ${targetColor}.`;
             document.getElementById("restart-btn").style.display = "block";
